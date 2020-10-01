@@ -156,6 +156,7 @@ line-height: 24px;
     height: 346px;
     background: url("../img/item-3.png") no-repeat center;
     background-size: cover;
+    box-shadow: -79px 25px 231px -94px rgba(0,22,61,0.46);
   }
 
     .item-3 > h2 {
