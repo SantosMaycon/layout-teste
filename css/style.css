@@ -83,6 +83,7 @@ img {
   text-transform: uppercase;
   padding: 13.5px 82.5px;
   background: #fff;
+  box-shadow: 3px 4px 3px 1.75px rgba(0, 22, 61, 24);
 }
 
 /* Section Category */
@@ -96,6 +97,15 @@ img {
   font-size: 52px;
   line-height: 62.4px;
   font-weight: 600;
+}
+
+.category .description h1::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #FC9B00;
+  margin-top: -7px;
 }
 
 .description > p {
@@ -239,9 +249,10 @@ line-height: 24px;
   margin-left: 20px;
   max-width: 170px;
   background: #0088ED;
+  box-shadow: 1.5px 2px 7.5px 0.75px rgba(0, 22, 61, 24);
 }
 
-.plans ul li:nth-child(2) > p { padding-top: 66.8px; }
+.plans ul li:nth-child(2) > p { padding-top: 66.8px;  }
 .plans ul li:nth-child(3) > p { padding-top: 116.8px; }
 .plans ul li:nth-child(4) > p { padding-top: 166.8px; }
 .plans ul li:nth-child(5) > p { padding-top: 232.5px; }
@@ -258,3 +269,37 @@ line-height: 24px;
 .plans .description {
   position: absolute;
 }
+
+.plans .description h1::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #00FC47;
+  margin-top: 10px;
+}
+
+/* Adicionando Alguns Efeitos com Js e CSS */
+
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform .8s, opacity .8s;
+}
+
+.fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+.fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+.fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}
+
